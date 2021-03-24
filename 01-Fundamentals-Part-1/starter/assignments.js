@@ -63,4 +63,12 @@ console.log(5 + 6 + '4' + 9 - 4 - 2 === 1143);
 
 console.log("Assignment 7 | 03/23/2021");
 
-let
+let numNeighbors = Number(prompt("How many countries neighbor your country?"));
+
+if (numNeighbors === 1) {
+  console.log(`Only ${numNeighbors} neighbor?`);
+} else if (numNeighbors > 1) {
+  console.log(`Wow! ${numNeighbors} neighbors!`)
+} else {
+  console.log("No Borders:(");
+}

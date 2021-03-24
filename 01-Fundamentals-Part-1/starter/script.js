@@ -201,3 +201,7 @@ if (favoriteNum !== 23) {
   console.log(`${favoriteNum} is not cool. 
   Why not 23?`)
 }
+
+//Boolean Logic
+
+age = 16;
