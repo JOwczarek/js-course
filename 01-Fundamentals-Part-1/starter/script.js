@@ -175,7 +175,7 @@ if (height || height != 0) {
   console.log("Height not yet defined!");
 }
 
-*/
+
 
 // === is strcit equality operator. no type coercion
 const age = 18;
@@ -202,6 +202,98 @@ if (favoriteNum !== 23) {
   Why not 23?`)
 }
 
+
+
 //Boolean Logic
 
-age = 16;
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasDriversLicense);
+console.log(!hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense && !hasGoodVision);
+console.log(!hasGoodVision && !hasDriversLicense);
+console.log(hasDriversLicense || hasDriversLicense);
+console.log(!hasDriversLicense || hasGoodVision);
+console.log(hasDriversLicense || !hasGoodVision);
+console.log(!hasGoodVision || !hasDriversLicense);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+const isTired = false;
+
+if (shouldDrive && !isTired) {
+  console.log("Should drive!");
+} else {
+  console.log("Someone else should drive...");
+}
+
+
+// Switch statement
+//Does strict comparison
+const day = `Sunday`;
+
+switch(day) {
+  case 'Monday' :
+    console.log(`Full day off!`);
+    break;
+  case 'Tuesday' :
+    console.log(`School`);
+    break;
+  case 'Wednesday' :
+  case 'Friday' :
+    console.log(`Work Work!`);
+    break;
+  case 'Thursday' :
+    console.log(`Courtney Has class...`);
+    break;
+  case 'Saturday' :
+    console.log(`Take the kids to work!`);
+    break;
+  case 'Sunday' :
+    console.log(`Study day!`);
+    break;
+  default :
+    console.log(`Messed up!`);
+}
+
+if (day === 'Monday'){
+  console.log(`Full day off!`);
+} else if (day === 'Tuesday'){
+  console.log(`School`);
+} else if (day === 'Wednesday' || day == 'Friday'){
+  console.log(`Work Work!`);
+} else if (day === 'Thursday'){
+  console.log(`Courtney Has class...`);
+} else if (day === 'Saturday'){
+  console.log(`Take the kids to work!`);
+} else if (day === 'Sunday') {
+  console.log(`Study day!`);
+} else {
+  console.log(`Messed up!`);
+}
+
+*/
+
+//Difference between statements and expressions
+//Expression is a piece of code that produces a value.
+// Like 3 + 4 or 1988 or true & false
+// A statement is usually a larger piece of code that 
+// performs actions, like if/else and switch statements
+//template literals expect expressions
+
+//Conditional operator
+
+const age = 32;
+// ? is the if : is the else. must have an else statement
+// also called the ternary operator, a boolean, an if, and an else;
+age >= 18 ? console.log("Adult!>!") :
+console.log("NOT Adult!>!");
+
+const drink = age >= 18 ? `Beer` : `water`;
+console.log(`${drink}`);
+
+// transpiling and polyfilling with babel converts modern javascript 
+// back to es5 to allow older browser verions to still work ES6+
+// means js from es6 to es2020, esnext is features that will be added
+// to es and are currently suppored by browsers before release
