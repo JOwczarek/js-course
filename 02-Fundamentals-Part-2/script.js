@@ -119,3 +119,37 @@ and over again */
 
 // console.log(fruitProcessor(2, 3));
 
+/**
+ * Storing functions in objects
+ */
+
+const josh = {
+    firstName: "Josh",
+    lastname: "Owc",
+    birthYear: 1988,
+    job: "student",
+    friends: ["Courtney", "Alika", "John"],
+    hasDriversLicsence: true,
+    /**
+     * Any function attached to an object is a method.
+     * Use the this. to access variables in the object
+     * 
+     */
+    // calcAge : function (birthYear) {
+    //     return 2021 - birthYear;
+    // }
+    
+    // calcAge : function () {
+    //     console.log(this.birthYear);
+    //     return 2021 - this.birthYear;
+    // }
+    calcAge: function () {
+       this.age = 2021 - this.birthYear;
+       return this.age;
+    }
+    this.calcAge();
+};
+
+console.log(josh.age);
+
+
