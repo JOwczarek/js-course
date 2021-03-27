@@ -22,7 +22,7 @@ featurs that are not yet implemented.
 // }
 
 /*Functions
-They are pieces of code that we can reuse over
+They are pieces of code that we can reuse over 
 and over again */
 
 // function logger() {
@@ -251,6 +251,10 @@ and over again */
  * methods.
  */
 
+/**
+ * Storing functions in objects
+ */
+
 // const josh = {
 //   firstName: "Josh",
 //   lastname: "Owc",
@@ -279,7 +283,15 @@ and over again */
 //   infoDetail: function () {
 //     return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and has ${this.hasDriversLicsence ? "a" : "no"} drivers licsence.`
 //   }
-
+    
+//     // calcAge : function () {
+//     //     console.log(this.birthYear);
+//     //     return 2021 - this.birthYear;
+//     // }
+//     calcAge: function () {
+//        this.age = 2021 - this.birthYear;
+//        return this.age;
+//     }
 // };
 
 // console.log(josh.calcAge());
@@ -288,3 +300,4 @@ and over again */
 
 
 
+for(let i = 0; i < 10; )
