@@ -48,3 +48,29 @@ const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(`Bill: S${bills[0]} Tips: S${tips[0]} Total: $${totals[0]}.`);
 console.log(`Bill: S${bills[1]} Tips: S${tips[1]} Total: $${totals[1]}.`);
 console.log(`Bill: S${bills[2]} Tips: S${tips[2]} Total: $${totals[2]}.`);
+
+const mark = {
+    fullName: "Mark Miller",
+    weight: 65,
+    height: 1.69,
+
+    calcBMI: function () {
+        this.BMI = this.weight / (this.height ** 2);
+    }
+}
+
+
+const john = {
+    fullName: "John Smith",
+    weight: 92,
+    height: 1.95,
+
+    calcBMI: function () {
+        this.BMI = this.weight / (this.height ** 2);
+    }
+}
+
+mark["calcBMI"]();
+john["calcBMI"]();
+
+console.log(mark.BMI > john.BMI ? `${mark.fullName}'s BMI (${mark.BMI} is greater than ${john.fullName}'s BMI(${john.BMI}))` : `${john.fullName}'s BMI (${john.BMI} is greater than ${mark.fullName}'s BMI(${mark.BMI}))`);

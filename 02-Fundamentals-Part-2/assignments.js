@@ -59,3 +59,40 @@ const populations = [1441, 330, 138, 38];
 console.log(`Array has 4 elements: ${populations.length === 4}`);
 
 const percentages = [percentageOfWorld3(populations[0]), percentageOfWorld3(populations[1]), percentageOfWorld3(populations[2]), percentageOfWorld3(populations[3])];
+
+const neighbours = ["Canada", "Mexico",
+    "Bahamas"];
+
+neighbours.push("Utopia");
+console.log(neighbours.includes("Germany") ? "Probably a European Country." : "Probably not in Europe");
+neighbours.pop();
+neighbours.push("Germany");
+console.log(neighbours.includes("Germany") ? "Probably a European Country." : "Probably not in Europe");
+
+const myCountry = {
+    country: "United States",
+    capital: "Washington D.C.",
+    language: "English",
+    population: 330,
+    neighbours: ["Canada", "Mexico"],
+
+    describe: function () {
+        return `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+    },
+
+    checkIsland: function () {
+        this.isIsland = this.neighbours.length === 0 ? true : false;
+    }
+};
+
+console.log(myCountry.describe());
+myCountry.population += 2;
+console.log(myCountry.describe());
+myCountry["population"] -= 2;
+console.log(myCountry.describe());
+
+myCountry["checkIsland"]();
+console.log(myCountry["isIsland"]);
+myCountry.neighbours = [];
+myCountry["checkIsland"]();
+console.log(myCountry["isIsland"]);

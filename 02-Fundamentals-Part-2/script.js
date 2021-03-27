@@ -120,7 +120,6 @@ and over again */
 // console.log(fruitProcessor(2, 3));
 
 /**
-<<<<<<< HEAD
  * Use arrays to store data
  */
 
@@ -204,78 +203,88 @@ and over again */
 // console.log(friends.includes("Courtney"));
 
 
+// /**
+//  * Objects Literal Syntax
+//  * Object person has 5 properties, each is a key
+//  * value pair. 
+//  */
+// const person = {
+//   firstName: "Josh",
+//   lastName: "Owc",
+//   age: 2021 - 1988,
+//   job: "student",
+//   friends: ["Courtney", "Alika"]
+// };
+
+// console.log(person);
+// /**
+//  * use . notation to get property value
+//  * you can also use bracket notation
+//  * you can use expressions with bracket notation
+//  */
+// console.log(person.lastName);
+// console.log(person['lastName']);
+
+// const nameKey = 'Name';
+// console.log(person['first' + nameKey]);
+// console.log(person['last' + nameKey]);
+
+// const userInterest = prompt('What do you want to know?');
+
+// /**
+//  * . is undefined
+//  */
+// if (person[userInterest]) {
+//   console.log(person.userInterest);
+//   console.log(person[userInterest]);
+// } else {
+//   console.log("Undefined for person.")
+// }
+
+// person.location = "Arizona";
+// person["interest"] = "programming";
+
+// console.log(`${person.firstName} has ${person.friends.length} friends, and his best friend is called ${person.friends[0]}`);
 /**
- * Objects Literal Syntax
- * Object person has 5 properties, each is a key
- * value pair. 
- */
-const person = {
-  firstName: "Josh",
-  lastName: "Owc",
-  age: 2021 - 1988,
-  job: "student",
-  friends: ["Courtney", "Alika"]
-};
-
-console.log(person);
-/**
- * use . notation to get property value
- * you can also use bracket notation
- * you can use expressions with bracket notation
- */
-console.log(person.lastName);
-console.log(person['lastName']);
-
-const nameKey = 'Name';
-console.log(person['first' + nameKey]);
-console.log(person['last' + nameKey]);
-
-const userInterest = prompt('What do you want to know?');
-
-/**
- * . is undefined
- */
-if (person[userInterest]) {
-  console.log(person.userInterest);
-  console.log(person[userInterest]);
-} else {
-  console.log("Undefined for person.")
-}
-
-person.location = "Arizona";
-person["interest"] = "programming";
-
-console.log(`${person.firstName} has ${person.friends.length} friends, and his best friend is called ${person.friends[0]}`);
-/**
- * Storing functions in objects
+ * Storing functions in objects, arrays are
+ * are also objects and have their own defined
+ * methods.
  */
 
-const josh = {
-  firstName: "Josh",
-  lastname: "Owc",
-  birthYear: 1988,
-  job: "student",
-  friends: ["Courtney", "Alika", "John"],
-  hasDriversLicsence: true,
-  /**
-   * Any function attached to an object is a method.
-   * Use the this. to access variables in the object
-   * 
-   */
-  // calcAge : function (birthYear) {
-  //     return 2021 - birthYear;
-  // }
+// const josh = {
+//   firstName: "Josh",
+//   lastname: "Owc",
+//   birthYear: 1988,
+//   job: "student",
+//   friends: ["Courtney", "Alika", "John"],
+//   hasDriversLicsence: true,
+//   /**
+//    * Any function attached to an object is a method.
+//    * Use the this. to access variables in the object
+//    * 
+//    */
+//   // calcAge : function (birthYear) {
+//   //     return 2021 - birthYear;
+//   // }
 
-  // calcAge : function () {
-  //     console.log(this.birthYear);
-  //     return 2021 - this.birthYear;
-  // }
-  calcAge: function () {
-    this.age = 2021 - this.birthYear;
-    return this.age;
-  }
+//   // calcAge : function () {
+//   //     console.log(this.birthYear);
+//   //     return 2021 - this.birthYear;
+//   // }
+//   calcAge: function () {
+//     this.age = 2021 - this.birthYear;
+//     return this.age;
+//   },
 
-};
+//   infoDetail: function () {
+//     return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and has ${this.hasDriversLicsence ? "a" : "no"} drivers licsence.`
+//   }
 
-console.log(josh.age);
+// };
+
+// console.log(josh.calcAge());
+// console.log(josh.age);
+// console.log(josh.infoDetail());
+
+
 
