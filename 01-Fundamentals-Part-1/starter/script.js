@@ -198,7 +198,7 @@ if (favoriteNum === 23) {
 }
 
 if (favoriteNum !== 23) {
-  console.log(`${favoriteNum} is not cool. 
+  console.log(`${favoriteNum} is not cool.
   Why not 23?`)
 }
 
@@ -284,16 +284,17 @@ if (day === 'Monday'){
 
 //Conditional operator
 
-const age = 32;
+// const age = 32;
 // ? is the if : is the else. must have an else statement
 // also called the ternary operator, a boolean, an if, and an else;
-age >= 18 ? console.log("Adult!>!") :
-console.log("NOT Adult!>!");
+// age >= 18 ? console.log("Adult!>!") :
+// console.log("NOT Adult!>!");
 
-const drink = age >= 18 ? `Beer` : `water`;
-console.log(`${drink}`);
+// const drink = age >= 18 ? `Beer` : `water`;
+// console.log(`${drink}`);
 
 // transpiling and polyfilling with babel converts modern javascript 
 // back to es5 to allow older browser verions to still work ES6+
 // means js from es6 to es2020, esnext is features that will be added
 // to es and are currently suppored by browsers before release
+

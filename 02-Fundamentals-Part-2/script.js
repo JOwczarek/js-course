@@ -22,7 +22,7 @@ featurs that are not yet implemented.
 // }
 
 /*Functions
-They are pieces of code that we can reuse over 
+They are pieces of code that we can reuse over
 and over again */
 
 // function logger() {
@@ -119,3 +119,129 @@ and over again */
 
 // console.log(fruitProcessor(2, 3));
 
+/**
+ * Use arrays to store data
+ */
+
+// const friends = ["Courtney", "Cyrus", "Rebekkah"];
+// console.log(friends);
+
+// /**
+//  * Must use new keyword for declaring arrays this way
+//  */
+// const years = new Array(1988, 1989, 2010, 2012, 2016);
+
+// /**
+//  * use square brackets and index to get element from array
+//  */
+// console.log(friends[0]);
+// console.log(friends[2]);
+
+// /**
+//  * Get length of array, not 0 based. 
+//  * must subtract one to align with array index.
+//  */
+// console.log(friends.length);
+// console.log(years[years.length - 1]);
+
+// /**
+//  * Only primitive types are immutable, not arrays
+//  */
+// friends[3] = "Luke";
+// friends[4] = "Ryker";
+
+// console.log(friends[3]);
+// console.log(friends[4]);
+
+// const josh = ["Joshua", "Owczarek", 2021 - 1998];
+
+/**
+ * Array methods
+ */
+
+// const friends = ["Courtney", "Cyrus", "Rebekkah"];
+
+// friends.push("Luke");
+// /**
+//  * push method adds element to end of array and
+//  *  returns the lenght of the new array
+//  */
+// let newLength = friends.push("Ryker");
+
+// console.log(newLength);
+
+// /**
+//  * Adds element to beginnng of array and 
+//  * returns new length of array
+//  */
+// newLength = friends.unshift("Tucker");
+
+// console.log(newLength);
+
+// /**
+//  * Removes last element of array and returns it.
+//  */
+// let removed = friends.pop();
+// console.log(removed);
+// friends.push(removed);
+// /**
+//  * Remoces first element of the array and returns it.
+//  */
+// removed = friends.shift();
+// console.log(removed);
+// friends.unshift(removed);
+
+// /**
+//  * Returns -1 if the element is not in the array.
+//  */
+// console.log(friends.indexOf("Bob"));
+
+// /**
+//  * More modern es6 method. Returns true/false.
+//  * Uses strict equality.
+//  */
+// console.log(friends.includes("Courtney"));
+
+
+/**
+ * Objects Literal Syntax
+ * Object person has 5 properties, each is a key
+ * value pair. 
+ */
+const person = {
+  firstName: "Josh",
+  lastName: "Owc",
+  age: 2021 - 1988,
+  job: "student",
+  friends: ["Courtney", "Alika"]
+};
+
+console.log(person);
+/**
+ * use . notation to get property value
+ * you can also use bracket notation
+ * you can use expressions with bracket notation
+ */
+console.log(person.lastName);
+console.log(person['lastName']);
+
+const nameKey = 'Name';
+console.log(person['first' + nameKey]);
+console.log(person['last' + nameKey]);
+
+const userInterest = prompt('What do you want to know?');
+
+/**
+ * . is undefined
+ */
+if (person[userInterest]) {
+  console.log(person.userInterest);
+  console.log(person[userInterest]);
+} else {
+  console.log("Undefined for person.")
+}
+
+person.location = "Arizona";
+person["interest"] = "programming";
+
+console.log(`${person.firstName} has ${person.friends.length} friends, and his best friend is called ${person.friends[0]}`);
