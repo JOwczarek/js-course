@@ -116,3 +116,4 @@ for (let i = 0; i < listOfNeighbours.length; i++) {
         console.log(`Neighbor: ${listOfNeighbours[i][j]}`)
     }
 }
+
