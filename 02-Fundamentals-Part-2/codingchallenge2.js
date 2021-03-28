@@ -74,3 +74,35 @@ mark["calcBMI"]();
 john["calcBMI"]();
 
 console.log(mark.BMI > john.BMI ? `${mark.fullName}'s BMI (${mark.BMI} is greater than ${john.fullName}'s BMI(${john.BMI}))` : `${john.fullName}'s BMI (${john.BMI} is greater than ${mark.fullName}'s BMI(${mark.BMI}))`);
+
+
+/**
+ * Challenge 3
+ */
+
+const bills2 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips2 = [];
+const totals2 = [];
+
+for (let i = 0; i < bills2.length; i++ ){
+    tips2.push(calcTip(bills2[i]));
+    totals2.push(bills2[i] + tips2[i]);
+}
+
+for (let i = 0; i < bills2.length; i++ ){
+    console.log(`The cost of bill ${i+1} is $${bills2[i]} and the tip
+    should be $${tips2[i]} for a total of $${totals2[i]}.`); 
+}
+
+function calcAverage2(arr){
+    let total = 0;
+ 
+
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i];
+    }
+
+    return total / arr.length;
+}
+
+console.log(calcAverage2(totals2));

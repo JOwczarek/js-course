@@ -299,7 +299,78 @@ and over again */
 // console.log(josh.infoDetail());
 
 
+// /**
+//  * Keeps running while condition is true.
+//  */
+// for(let i = 1; i <= 10; i++ ) {
+//     console.log(`Lifting weights repition ${i}`);
+// }
 
-for(let i = 0; i < 10; i++ ) {
-    
-}
+// /**
+//  * More on loops
+//  */
+
+// const joshArray = [
+//     "Josh",
+//     "Owczarek",
+//     2021-1988,
+//     "student",
+//     ["Courtney", "Alika", "Cyrus"]
+
+// ]
+
+// for(let i=0; i < joshArray.length; i++) {
+//     console.log(joshArray[i], typeof joshArray[i]);
+// }
+
+// const years = [1992, 1985, 1965, 2010, 2000, 2019];
+
+// let ages = [];
+
+// for (let i = 0; i < years.length; i++ ){
+//     ages.push(2021 - years[i]);
+// }
+
+// /**
+//  * Continue exits the current iteration of the loop and continues to 
+//  * the next one. Break exits the loop.
+//  */
+
+// for (let i = 0; i < years.length; i++ ){
+//     console.log(`Line : ${i}`);
+//     if((i %4) === 0) {
+//         continue;
+//     }
+//     console.log(ages[i]);
+// }
+
+// for (let i = joshArray.length - 1; i > -1; i-- ) {
+//     console.log(i, joshArray[i]);
+// }
+
+// for (let i = 1; i <= 3; i++) {
+//     console.log(`--------Starting Exercise ${i}`);
+//     for(let j = 1; j <= 5; j++){
+//         console.log(`----Rep ${j}`);
+//     }
+// }
+
+// let rep = 1 
+// while (rep <= 10) {
+//     console.log(`Lifting weights repition ${rep}`);
+//     rep++;
+// }
+
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(`You rolled a ${dice}`);
+do { 
+    if (dice !== 6){
+        dice = Math.trunc(Math.random() * 6) + 1;
+        console.log(`You rolled a ${dice}`);
+    }
+    if (dice === 6) {
+        console.log(`You won!`);
+    }
+} while(dice !== 6)
+
